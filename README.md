@@ -1,6 +1,5 @@
 # ACHD_res
 In this repository you can find our project for the university.
-
 This will be a web application that will help in assigning subjects to university teachers, streamlining and optimizing the process carried out by the degree coordinator.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 En este repositorio podras encontrar nuestro proyecto para la univercidad
