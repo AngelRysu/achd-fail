@@ -2,3 +2,4 @@ config.ini
 .cache/
 .local/
 .viminfo/
+__pycache__/

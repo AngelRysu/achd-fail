@@ -1,21 +1,12 @@
 from flask import Flask
 from flask_orator import Orator
-import os
 from configparser import ConfigParser
 config = ConfigParser()
 config.read("config.ini")
-print(config.sections())
 
 
 DB_HOST = config.get("DB", "DB_HOST")
 DB_PASSWORD = config.get("DB", "DB_PASSWORD")
-
-print("DB HOST")
-print(DB_HOST)
-print("DB PASSWORD")
-print(DB_PASSWORD)
-
-
 
 app = Flask(__name__)
 
