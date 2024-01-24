@@ -9,7 +9,7 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: url(../imagenes/escuela.jpg) no-repeat;
+    background: url(../img/escuela.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
