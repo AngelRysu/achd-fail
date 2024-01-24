@@ -17,3 +17,5 @@
 [user]
 	email = alejandroaamavizcal@gmail.com
 	name = Alejandro Amavizca
+[credential]
+	helper = cache --timeout=21600
