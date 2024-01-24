@@ -18,3 +18,7 @@ PS1="$RESET_COLOR\$(date +%H:%M) \w$YELLOW \$(parse_git_branch)$LIGHT_GREEN\$ $R
 
 # Load virtualenvwrapper
 source virtualenvwrapper.sh &> /dev/null
+
+export $(cat .env | xargs)
+
+
