@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block title %}Dashboard{% endblock %}
+
+
+{% block body %}
+
+<div>
+
+    <p>Este sitio está en construcción</p>
+
+    <p>Has iniciado sesión como {{user.nombres}}</p>
+
+    <p>Tu sesión expira: {{sesion.expires}}</p>
+
+    {% for dato in d_x %}
+
+    <p><strong>ID: {{dato.id}}</strong> Dato: {{dato.dato}}</p>
+
+    {% endfor %}
+
+</div>
+
+<p>Estamos trabajando para tí</p>
+
+<div>
+
+
+</div>
+
+
+{% endblock %}

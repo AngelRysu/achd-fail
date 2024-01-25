@@ -124,7 +124,9 @@ def dashboard():
     sesion = db.table('sesiones').where('sessionID',cookies['sessionID']).get().first()
     user = db.table('usersPrueba').where('id',sesion.userID).get().first()
 
-    return "HOLA, " + str(user.nombres)
+    d = db.table('datos_ejemplo').get()
+
+    return render_template('dashboard.html',user=user,sesion=sesion,d_x=d)
 
 
 
