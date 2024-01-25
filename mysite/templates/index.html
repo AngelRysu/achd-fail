@@ -8,13 +8,16 @@
 </head>
 <body>
     <div class="main">
-        <form action="">
+
+        <h1>{{mensaje}}</h1>
+
+        <form action="/login" method="post">
             <h1>Login</h1>
             <div class="input">
-                <input type="text" placeholder="Correo" required>
+                <input type="email" placeholder="Correo" name="email" required>
             </div>
             <div class="input">
-                <input type="password" placeholder="Contraseña" required>
+                <input type="password" placeholder="Contraseña" name="password" required>
             </div>
             <button class="btn" type="submit">Iniciar</button>
             <div class="link-de-registro">
