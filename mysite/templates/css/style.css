@@ -27,6 +27,10 @@ body{
     font-size: 35px;
     text-align: center;
 }
+.main img{
+    width: 300px;
+    height: auto;
+}
 .main .input{
     width: 100%;
     height: 50px;
