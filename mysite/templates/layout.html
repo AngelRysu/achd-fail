@@ -119,6 +119,8 @@
 
 </head>
 
+
+<body class="{% block body_classes %}{% ednblock %}">
     <header>
         <a href="#"><img src="img/logo.jpg"></a>
         <nav>
@@ -134,32 +136,30 @@
                 <a href="#">Serrar sesion</a>
             </div>
         </div>
-        
-
     </header>
 
-<body>
 
 {% block body %}
 {% endblock %}
 
+
+    <footer>
+
+        <div>
+            <a href="#">Términos y Condiciones</a>
+        </div>
+
+        <div>
+            <a href="#">Privacidad</a>
+        </div>
+
+        <div>
+
+            <a href="#">Enviar solicitud al administrador</a>
+
+        </div>
+
+    </footer>
 </body>
 
-<footer>
-
-    <div>
-        <a href="#">Términos y Condiciones</a>
-    </div>
-
-    <div>
-        <a href="#">Privacidad</a>
-    </div>
-
-    <div>
-
-        <a href="#">Enviar solicitud al administrador</a>
-
-    </div>
-
-</footer>
 </html>
