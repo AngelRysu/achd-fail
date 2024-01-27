@@ -1,16 +1,41 @@
 {% extends 'layout.html' %}
 
-{% block title %}Dashboard{% endblock %}
+{% block title %}Cambio de Contraseña{% endblock %}
 
 
 {% block body %}
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    
+</style>
 
-<div>
+<div class="main">
 
     <p>Este sitio está en construcción</p>
-
-    <p>Has iniciado sesión como {{user.nombres}}</p>
-
+    <p>Hola {{user.nombres}}</p>
+    <div class="input">
+    <input type="password" placeholder="Contraseña actual">
+    </div>
+    <div class="input">
+    <input type="password" placeholder="Nueva Contraseña">
+    </div>
+    <div class="input">
+    <input type="password" placeholder="Confirmar Contraseña">
+    </div>
+    <button class="Confirmar">Confirmar</button>
+    
+    
     <p>Tu sesión expira: {{sesion.expires}}</p>
 
     {% for dato in d_x %}
