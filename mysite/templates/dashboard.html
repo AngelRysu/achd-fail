@@ -5,38 +5,28 @@
 {% block content %}
 
 
-<div class="main">
+    <div class="main">
 
-    <p>Este sitio está en construcción</p>
-    <p>Hola {{user.nombres}}</p>
-    <div class="input">
-    <input type="password" placeholder="Contraseña actual">
+        <p>Este sitio está en construcción</p>
+        <p>Hola {{user.nombres}}</p>
+        <div class="input">
+            <input type="password" placeholder="Contraseña actual">
+        </div>
+        <div class="input">
+            <input type="password" placeholder="Nueva Contraseña">
+        </div>
+        <div class="input">
+            <input type="password" placeholder="Confirmar Contraseña">
+        </div>
+        <button class="Confirmar">Confirmar</button>    
+        <p>Tu sesión expira: {{sesion.expires}}</p>
+        {% for dato in d_x %}
+        <p><strong>ID: {{dato.id}}</strong> Dato: {{dato.dato}}</p>
+        {% endfor %}
     </div>
-    <div class="input">
-    <input type="password" placeholder="Nueva Contraseña">
+
+    <p>Estamos trabajando para tí</p>
+
+    <div>
     </div>
-    <div class="input">
-    <input type="password" placeholder="Confirmar Contraseña">
-    </div>
-    <button class="Confirmar">Confirmar</button>
-    
-    
-    <p>Tu sesión expira: {{sesion.expires}}</p>
-
-    {% for dato in d_x %}
-
-    <p><strong>ID: {{dato.id}}</strong> Dato: {{dato.dato}}</p>
-
-    {% endfor %}
-
-</div>
-
-<p>Estamos trabajando para tí</p>
-
-<div>
-
-
-</div>
-
-
 {% endblock %}
