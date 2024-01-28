@@ -72,14 +72,15 @@
         <p>Este sitio está en construcción</p>
         <h1>Hola {{user.nombres}}</h1>
         <div class="input">
-            <input type="password" placeholder="Contraseña actual">
+            <input type="password" placeholder="Contraseña actual" name="password">
         </div>
         <div class="input">
-            <input type="password" placeholder="Nueva Contraseña">
+            <input type="password" placeholder="Nueva Contraseña" name="newpass">
         </div>
         <div class="input">
-            <input type="password" placeholder="Confirmar Contraseña">
+            <input type="password" placeholder="Confirmar Contraseña" name="conf_newpass">
         </div>
+        <div>
         <button class="Confirmar">Confirmar</button>    
         <p>Tu sesión expira: {{sesion.expires}}</p>
         {% for dato in d_x %}
