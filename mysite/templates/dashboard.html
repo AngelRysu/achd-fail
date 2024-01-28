@@ -10,6 +10,7 @@
             justify-content: center;
             min-height: 100vh;    
             background-color: #D2D2D2;
+            margin: auto;
             width: 400px;
             background: transparent;
             border: 2px solid rgba(255, 255, 255, .2);
@@ -54,6 +55,14 @@
         .main .Confirmar:hover{
             background-color: gold;
         }
+        .main h1{
+            font-size: 35px;
+            text-align: center;
+            color: black;
+        }
+        .main p{
+            color: #333;
+        }
    </style>
 {% endblock %}
 
@@ -66,7 +75,7 @@
     <div class="main">
 
         <p>Este sitio está en construcción</p>
-        <p>Hola {{user.nombres}}</p>
+        <h1>Hola {{user.nombres}}</h1>
         <div class="input">
             <input type="password" placeholder="Contraseña actual">
         </div>
