@@ -4,3 +4,4 @@ config.ini
 .bashrc
 .local/
 .gitconfig
+.my.cnf
