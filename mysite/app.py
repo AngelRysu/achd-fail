@@ -138,7 +138,14 @@ def dashboard():
 
     return render_template('dashboard.html',user=user,sesion=sesion,d_x=d)
 
-
+@app.route('/homeDocente')
+def HomeDocente():
+    cookies = request.cookies
+    if not verificarSesion(cookies):
+        return make_response(redirect('/'))
+    sesion = db.table('sesiones').where('sessionID',cookies['sessionID']).get().first()
+    user = db.table('usersPrueba').where('id',sesion.userID).get().first()
+    return render_template('homeDocente.html',user=user,sesion=sesion)
 
 
 
