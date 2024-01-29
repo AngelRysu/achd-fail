@@ -6,4 +6,5 @@ config.ini
 .gitconfig
 .my.cnf
 .viminfo
+.profile
 .vimrc
