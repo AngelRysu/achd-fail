@@ -75,6 +75,8 @@ def route_css_files(filename):
 
 @app.route('/')
 def hello_world():
+    if verificarSesion(request.cookies):
+        return make_response(redirect('/dashboard'))
     return render_template('index.html')
 
 @app.route('/logged')
