@@ -3,3 +3,12 @@ config.ini
 .bashrc/
 .bashrc
 .local/
+.gitconfig
+.my.cnf
+.viminfo
+.profile
+.ipython/profile_default/startup
+.ipython/profile_default/startup/
+.pythonstartup.py
+.bashrc
+.vimrc

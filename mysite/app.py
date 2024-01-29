@@ -74,12 +74,21 @@ def route_css_files(filename):
     return send_from_directory('templates/js', path=filename)
 
 @app.route('/')
-def hello_world():
+def principal():
+    if verificarSesion(request.cookies):
+        return make_response(redirect('/dashboard'))
     return render_template('index.html')
 
 @app.route('/logged')
 def logged():
     return "TE HAS LOGUEADO CON ÉXITO"
+
+@app.route('/logout')
+def logout():
+    r = make_response(redirect('/'))
+    r.set_cookie('sessionID','')
+    return r
+
 
 @app.route('/login',methods=['POST'])
 def login():
@@ -102,6 +111,7 @@ def login():
         sesion = db.table('sesiones').where('sessionID',sessionID).get().first()
         if sesion is None:
             break
+
     #A CONSIDERACIÓN
     db.table('sesiones').insert({
         'userID':user.id,
