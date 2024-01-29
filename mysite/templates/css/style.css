@@ -66,6 +66,9 @@ body{
     color: #333;
     font-weight: 600px;
 }
+.main .btn:hover{
+    background-color: gold;
+}
 .main .link-de-registro{
     font-size: 14px;
     text-align: center;
