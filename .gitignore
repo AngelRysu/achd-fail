@@ -5,3 +5,5 @@ config.ini
 .local/
 .gitconfig
 .my.cnf
+.viminfo
+.vimrc
