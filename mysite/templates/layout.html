@@ -16,6 +16,7 @@
             justify-content: space-between;
             padding: 0 20px;
             background: #37109b;
+            font-family:'Montserrat';
             color: #fff;
             border-bottom: 2px solid #e60122;
         }
@@ -24,10 +25,11 @@
             height: auto;
         }
         header nav {
+            font-family:'Montserrat';
             display: flex;
             align-items: center;
-            justify-content: space-around; 
-            flex-grow: 1;     
+            justify-content: space-around;
+            flex-grow: 1;
         }
         header nav a{
             color: #fff;
@@ -116,7 +118,7 @@
     </head>
     <body class="{% block body_class %}{% endblock %}">
         <header>
-            <a href="#"><img src="img/logo.jpg"></a>
+            <a href="/dashboard"><img src="img/logo.jpg"></a>
             <nav>
                 <a href="#">Opcion 1</a>
                 <a href="#">Opcion 2</a>
@@ -127,10 +129,10 @@
                 <div class="dropdown-content">
                     <a href="#">Perfil</a>
                     <a href="#">Configuracion</a>
-                    <a href="#">Serrar sesion</a>
+                    <a href="/logout">Cerrar sesión</a>
                 </div>
             </div>
-        
+
 
         </header>
 {% block content %}

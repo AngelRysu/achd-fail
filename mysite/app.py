@@ -81,6 +81,13 @@ def hello_world():
 def logged():
     return "TE HAS LOGUEADO CON ÉXITO"
 
+@app.route('/logout')
+def logout():
+    r = make_response(redirect('/'))
+    r.set_cookie('sessionID','')
+    return r
+
+
 @app.route('/login',methods=['POST'])
 def login():
     try:
