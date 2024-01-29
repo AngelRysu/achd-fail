@@ -3,3 +3,4 @@ config.ini
 .bashrc/
 .bashrc
 .local/
+.gitconfig
