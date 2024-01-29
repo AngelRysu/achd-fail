@@ -1,0 +1,63 @@
+{% extends 'layout.html' %}
+
+
+{% block title %}Inicio{% endblock %}
+
+{% block css %}
+<style>
+    
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .box1 {
+        grid-area: 3 / 2 / 5 / 4;
+        width: 300px;
+        height: 200px;
+        border: 2px solid #333;
+        padding: 20px;
+        margin: 20px;
+        box-sizing: border-box;
+        cursor: pointer;
+        text-decoration: none;
+        color: #000;
+        text-align: center;
+        line-height: 160px;
+        font-size: 30px;
+        background-color: rgb(168, 187, 241);
+    }
+
+
+    .box2 {
+        grid-area: 3 / 5 / 5 / 7;
+        width: 300px;
+        height: 200px;
+        border: 2px solid #333;
+        padding: 20px;
+        margin: 20px;
+        box-sizing: border-box;
+        cursor: pointer;
+        text-decoration: none;
+        color: #000;
+        text-align: center;
+        line-height: 160px;
+        font-size: 30px;
+        background-color: rgb(168, 187, 241);
+    }
+</style>
+{% endblock %}
+
+{% block body_class %}Inicio{% endblock %}
+
+<div class="parent">
+    <a href="#" class="box1">Disponibilidad</a>
+    <a href="#" class="box2">Ver horarios</a>
+</div>
+
+{% block content %}
+
+{% endblock %}
