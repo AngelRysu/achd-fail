@@ -7,5 +7,6 @@ config.ini
 .my.cnf
 .viminfo
 .profile
+.pythonstartup.py
 .bashrc
 .vimrc
