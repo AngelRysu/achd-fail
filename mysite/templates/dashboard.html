@@ -12,7 +12,6 @@
             min-height: 100vh;
             margin: auto;
             width: 400px;
-            background: transparent;
             border: 2px solid rgba(255, 255, 255, .2);
             box-shadow: 0 0 10px rgba(0, 0, 0, .2);
             color: white;
@@ -38,7 +37,7 @@
             color: red;
         }
         .main .Confirmar{
-            width: 80%;
+            width: 95%;
             height: 50px;
             margin-top: 15px;
             background: white;
@@ -85,9 +84,7 @@
         <div>
         <button class="Confirmar">Confirmar</button>
         <p>Tu sesión expira: {{sesion.expires}}</p>
-        {% for dato in d_x %}
-        <p><strong>ID: {{dato.id}}</strong> Dato: {{dato.dato}}</p>
-        {% endfor %}
+        
     </div>
 
     <p>Estamos trabajando para tí</p>
