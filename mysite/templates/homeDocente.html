@@ -12,26 +12,7 @@
         flex-wrap: wrap;
     }
 
-    .box1 {
-        grid-area: 3 / 2 / 5 / 4;
-        width: 300px;
-        height: 200px;
-        border: 2px solid #333;
-        padding: 20px;
-        margin: 20px;
-        box-sizing: border-box;
-        cursor: pointer;
-        text-decoration: none;
-        color: #000;
-        text-align: center;
-        line-height: 160px;
-        font-size: 30px;
-        background-color: rgb(168, 187, 241);
-    }
-
-
-    .box2 {
-        grid-area: 3 / 5 / 5 / 7;
+    .box {
         width: 300px;
         height: 200px;
         border: 2px solid #333;
@@ -55,7 +36,7 @@
 
 {% block content %}
 <div class="parent">
-    <a href="#" class="box1">Disponibilidad</a>
-    <a href="#" class="box2">Ver horarios</a>
+    <a href="#" class="box">Disponibilidad</a>
+    <a href="#" class="box">Ver horarios</a>
 </div>
 {% endblock %}
