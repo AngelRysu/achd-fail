@@ -10,7 +10,7 @@
     .parent {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
         flex-wrap: wrap;
         margin-top:10rem;
     }
@@ -18,13 +18,13 @@
     .box {
         border-radius: 1rem;
         width: 300px;
-        height: 150px;
+        height: 200px;
         border: none;
         padding: 20px;
-        margin: 20px;
+        margin: 100px;
         box-sizing: border-box;
         text-decoration: none;
-        color: #000;
+        color: black;
         text-align: center;
         font-size: 30px;
         background-color: rgb(168, 187, 241);
@@ -36,9 +36,11 @@
         flex-direction: column;
         transition: .3s;
     }
+    .box .imge{
+        height: 150px;
+    }
     .box:hover{
-        background-color: rgb(114 123 147);
-        color:white;
+        background-color: #a98bf5;
     }
 </style>
 {% endblock %}
@@ -49,7 +51,9 @@
 
 {% block content %}
 <div class="parent">
-    <a href="#" class="box">Disponibilidad</a>
-    <a href="#" class="box">Ver horarios</a>
+    <a href="#" class="box">
+        <img class="imge" src="img/weeklycalendar.png">Disponibilidad</a>
+    <a href="#" class="box">
+        <img class="imge" src="img/time.png">Ver horario</a>
 </div>
 {% endblock %}
