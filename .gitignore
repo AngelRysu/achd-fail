@@ -1,8 +1,12 @@
 .cache/
+.cache
 config.ini
 .bashrc/
 .bashrc
 .local/
+.local
+.virtualenvs/
+.virtualenvs
 .gitconfig
 .my.cnf
 .viminfo
