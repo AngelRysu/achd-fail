@@ -15,19 +15,27 @@
     }
 
     .box {
+        border-radius: 1rem;
         width: 300px;
-        height: 200px;
-        border: 2px solid #333;
+        height: 150px;
+        border: none;
         padding: 20px;
         margin: 20px;
         box-sizing: border-box;
-        cursor: pointer;
         text-decoration: none;
         color: #000;
         text-align: center;
-        line-height: 160px;
         font-size: 30px;
         background-color: rgb(168, 187, 241);
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .box:hover{
+        background-color: rgb(100, 1110, 187);
     }
 </style>
 {% endblock %}
