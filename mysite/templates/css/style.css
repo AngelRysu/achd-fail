@@ -70,17 +70,17 @@ body{
 .main .btn:hover{
     background-color: gold;
 }
-.main .link-de-registro{
+.main .recuperar{
     font-size: 14px;
     text-align: center;
     margin: 20px;
 }
-.link-de-registro p a{
+.recuperar p a{
     color: white;
     text-decoration: none;
     font-weight: 600;
 }
 
-.link-de-registro p a:hover{
+.recuperar p a:hover{
     text-decoration: underline;
 }
